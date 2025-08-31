@@ -1,25 +1,25 @@
 const chalk = require("chalk");
 
-function styledLog({ prefix = "🔷", label = "Mirrykal", suffix = "🔷", color = "#33ffc9", msg }) {
+function styledLog({ prefix = "🔷", label = "Henry-x bot", suffix = "🔷", color = "#33ffc9", msg }) {
   console.log(chalk.bold.hex(color)(`${prefix} [ ${label} ] » ${msg} ${suffix}`));
 }
 
 module.exports = (msg, type = "info") => {
   switch (type.toLowerCase()) {
     case "warn":
-      styledLog({ prefix: "⚠️", label: "Arun", suffix: "⚠️", color: "#FFD700", msg });
+      styledLog({ prefix: "⚠️", label: "HENRY", suffix: "⚠️", color: "#FFD700", msg });
       break;
     case "error":
-      styledLog({ prefix: "❌", label: "Arun", suffix: "❌", color: "#FF3333", msg });
+      styledLog({ prefix: "❌", label: "HENRY", suffix: "❌", color: "#FF3333", msg });
       break;
     case "success":
-      styledLog({ prefix: "✅", label: "Arun", suffix: "✅", color: "#00FF7F", msg });
+      styledLog({ prefix: "✅", label: "HENRY", suffix: "✅", color: "#00FF7F", msg });
       break;
     case "load":
-      styledLog({ prefix: "🔄", label: "Arun", suffix: "🔄", color: "#00CED1", msg });
+      styledLog({ prefix: "🔄", label: "HENRY", suffix: "🔄", color: "#00CED1", msg });
       break;
     default:
-      styledLog({ prefix: "ℹ️", label: "Arun", suffix: "ℹ️", color: "#00BFFF", msg });
+      styledLog({ prefix: "ℹ️", label: "HENRY", suffix: "ℹ️", color: "#00BFFF", msg });
       break;
   }
 };
@@ -27,16 +27,16 @@ module.exports = (msg, type = "info") => {
 module.exports.loader = (msg, type = "info") => {
   switch (type.toLowerCase()) {
     case "warn":
-      styledLog({ prefix: "⚠️", label: "MirryKal", suffix: "⚠️", color: "#FFD700", msg });
+      styledLog({ prefix: "⚠️", label: "Henry-x", suffix: "⚠️", color: "#FFD700", msg });
       break;
     case "error":
-      styledLog({ prefix: "❗", label: "MIRRYKAL Loader", suffix: "❗", color: "#FF334B", msg });
+      styledLog({ prefix: "❗", label: "HENRY-X Loader", suffix: "❗", color: "#FF334B", msg });
       break;
     case "success":
-      styledLog({ prefix: "🚀", label: "MIRRYKAL Loader", suffix: "🚀", color: "#32CD32", msg });
+      styledLog({ prefix: "🚀", label: "HENRY-X Loader", suffix: "🚀", color: "#32CD32", msg });
       break;
     default:
-      styledLog({ prefix: "🔷", label: "Mirrykal Loader", suffix: "🔷", color: "#33ffc9", msg });
+      styledLog({ prefix: "🔷", label: "HENRY-X Loader", suffix: "🔷", color: "#33ffc9", msg });
       break;
   }
 };
